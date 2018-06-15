@@ -1,3 +1,5 @@
+/ logging functions
+
 .log.o:{
   msg:string[.z.p]," | Info | ",.utl.sub x;
   if[.log.write;.log.h msg];

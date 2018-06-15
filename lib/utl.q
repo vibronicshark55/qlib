@@ -1,3 +1,5 @@
+/ utility functions
+
 .utl.p.symbol:{[p]` sv@[(),p;0;hsym] };                                                         / [path] build filepath from a list of symbols
 
 .utl.p.string:{[p](":"=first p)_p:string p};                                                    / [path] convert filepath to string

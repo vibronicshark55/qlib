@@ -1,3 +1,5 @@
+/ file loading functions
+
 .load.file.q:{[d;f]                                                                             / [directory;file] load file
   if[()~key p:.utl.p.symbol d,f;
     .log.e("file does not exist {}";.Q.s1 p);

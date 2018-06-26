@@ -39,6 +39,14 @@
   :read0 p;
  };
 
+.load.file.custom:{[d;f;func]                                                                   / [directory;file;function] apply custom function to parse file
+  if[()~key p:.utl.p.symbol d,f;                                                                / check file exists
+    .log.e("file does not exist {}";.Q.s1 p);
+    :90;
+   ];
+  :func p;                                                                                      / apply function to filepath
+ };
+
 .load.parse:{[d]                                                                                / [dict] create table from dictionary of parameters
   :d[`k]xkey flip d[`c]!d[`t]$\:();
  };

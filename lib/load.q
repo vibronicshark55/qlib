@@ -42,7 +42,7 @@
 .load.file.custom:{[d;f;func]                                                                   / [directory;file;function] apply custom function to parse file
   if[()~key p:.utl.p.symbol d,f;                                                                / check file exists
     .log.e[`load]("file does not exist {}";.Q.s1 p);
-    :90;
+    :();
    ];
   :func p;                                                                                      / apply function to filepath
  };
